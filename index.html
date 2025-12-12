@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoliSim@CHI 2026 | LLM Agent Simulation for Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Network Background -->
+    <canvas id="network-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">PoliSim@CHI 2026</a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#cfp">Call for Participation</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#info">Key Information</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">CHI 2026 Workshop</div>
+            <h1 class="hero-title">
+                <span class="title-main">PoliSim</span>
+                <span class="title-sub">LLM Agent Simulation for Policy</span>
+            </h1>
+            <p class="hero-description">
+                Bridging HCI, NLP, and policymaking to explore how LLM agent simulations 
+                can become genuinely useful tools for policy implementation.
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>April 13-17, 2026</span>
+                </div>
+                <div class="meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Barcelona, Spain</span>
+                </div>
+            </div>
+            <a href="#cfp" class="hero-cta">Submit Your Work</a>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Overview</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p class="lead">
+                        Large Language Models have rapidly advanced from powerful text generators to versatile 
+                        reasoning systems that can act as autonomous agents. When deployed in social settings, 
+                        these agents exhibit emergent phenomena such as coalition formation, information diffusion, 
+                        and collective decision-making.
+                    </p>
+                    <p>
+                        Policy decisions are inherently collective, consequential, and made under uncertainty. 
+                        Unlike laboratory science, policymaking rarely affords controlled trials. LLM agent 
+                        simulations offer <em>in silico</em> testbeds where policymakers could experiment with 
+                        interventions, stress-test communication strategies, and anticipate unintended consequences 
+                        at scale across diverse populations.
+                    </p>
+                    <p>
+                        Drawing on HCI traditions such as participatory and user-centered design, we argue that 
+                        the usefulness of LLM agent simulations emerges through iterative, stakeholder-engaged 
+                        design, as policymakers build trust, discover system limits, and recalibrate expectations.
+                    </p>
+                </div>
+                <div class="guiding-questions">
+                    <h3>Guiding Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-card">
+                            <div class="question-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            </div>
+                            <h4>Usefulness</h4>
+                            <p>How can LLM agent simulations move beyond technical demonstrations to become practical tools for policymaking?</p>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h4>Responsible Use</h4>
+                            <p>How can simulations be designed and interpreted responsibly, ensuring appropriate reliance, transparency, and fairness?</p>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                            </div>
+                            <h4>Co-evolution</h4>
+                            <p>How can simulations and policy processes be developed simultaneously, so that each informs and adapts to the other?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Participation Section -->
+    <section class="section section-alt" id="cfp">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Call for Participation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cfp-content">
+                <p class="lead">
+                    We invite position papers (2–4 pages) or short reports describing case studies, 
+                    design explorations, methodological insights, or reflections on using LLM agent 
+                    simulation for policy. Encore submissions of relevant published work are welcome.
+                </p>
+                
+                <div class="cfp-topics">
+                    <h3>Topics of Interest</h3>
+                    <ul class="topic-list">
+                        <li>LLM agent simulations for public health, climate adaptation, education reform, and other policy domains</li>
+                        <li>Institutional and organizational policy applications (emergency preparedness, online community management)</li>
+                        <li>Methodological innovations in memory architectures, environment embedding, and agent heterogeneity</li>
+                        <li>Responsible AI considerations for policy simulations</li>
+                        <li>Participatory and user-centered design approaches for simulation tools</li>
+                        <li>Case studies of policy-simulation co-development</li>
+                        <li>Evaluation frameworks for policy-relevant simulations</li>
+                    </ul>
+                </div>
+
+                <div class="cfp-details">
+                    <div class="detail-card">
+                        <h4>Submission Format</h4>
+                        <p>2–4 page position papers or short reports following the ACM template. Papers will be reviewed for relevance and diversity of perspectives.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Publication</h4>
+                        <p>All accepted papers will be published on the workshop website and in the proceedings with CEUR-WS. Selected authors will be invited to extend their work for established venues.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Attendance</h4>
+                        <p>At least one author of each accepted paper must register for and attend the workshop. Hybrid participation options will be available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section class="section" id="organizers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Organizers</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/yuxuan_li.jpg" alt="Yuxuan Li">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://yuxuanli.com/">Yuxuan Li</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/wesley_hanwen_deng.jpg" alt="Wesley Hanwen Deng">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://wesleydeng.com/">Wesley Hanwen Deng</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/xuhui_zhou.jpg" alt="Xuhui Zhou">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://xuhuiz.com/">Xuhui Zhou</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/kevin_klyman.jpg" alt="Kevin Klyman">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://www.kevinklyman.com/">Kevin Klyman</a></h4>
+                    <p class="organizer-affiliation">Stanford University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/chun_yu.jpg" alt="Chun Yu">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/">Chun Yu</a></h4>
+                    <p class="organizer-affiliation">Tsinghua University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/yuanchun_shi.jpg" alt="Yuanchun Shi">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://www.cs.tsinghua.edu.cn/csen/info/1306/4332.htm">Yuanchun Shi</a></h4>
+                    <p class="organizer-affiliation">Tsinghua University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/nicholas_vincent.jpg" alt="Nicholas Vincent">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://www.nickmvincent.com/">Nicholas Vincent</a></h4>
+                    <p class="organizer-affiliation">Simon Fraser University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/amy_x_zhang.jpg" alt="Amy X. Zhang">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://homes.cs.washington.edu/~axz/">Amy X. Zhang</a></h4>
+                    <p class="organizer-affiliation">University of Washington</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/maarten_sap.jpg" alt="Maarten Sap">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://maartensap.com/">Maarten Sap</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/sauvik_das.jpg" alt="Sauvik Das">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://sauvikdas.com/">Sauvik Das</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-avatar">
+                        <img src="assets/people/hirokazu_shirado.jpg" alt="Hirokazu Shirado">
+                    </div>
+                    <h4 class="organizer-name"><a href="https://www.shirado.net/">Hirokazu Shirado</a></h4>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Information Section -->
+    <section class="section section-alt" id="info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Information</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h4>Submission Deadline</h4>
+                    <p class="info-date">February 13, 2026</p>
+                    <p class="info-note">Anywhere on Earth (AoE)</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h4>Notification</h4>
+                    <p class="info-date">March 13, 2026</p>
+                    <p class="info-note">Anywhere on Earth (AoE)</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <h4>Workshop Date</h4>
+                    <p class="info-date">April 13-17, 2026</p>
+                    <p class="info-note">During CHI 2026</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h4>Location</h4>
+                    <p class="info-date">Barcelona, Spain</p>
+                    <p class="info-note">In-person (Hybrid available)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">PoliSim@CHI 2026</span>
+                    <p>LLM Agent Simulation for Policy</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#overview">Overview</a>
+                    <a href="#cfp">Call for Participation</a>
+                    <a href="#organizers">Organizers</a>
+                    <a href="#info">Key Information</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PoliSim Workshop. Part of CHI 2026, Barcelona, Spain.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
