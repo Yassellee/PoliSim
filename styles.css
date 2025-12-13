@@ -600,21 +600,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    justify-items: center;
-}
-
-/* Wrapper for the last 3 items */
-.organizers-row-last {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-items: center;
-    justify-self: start;
+    justify-items: start;
 }
 
 .organizer-card {
-    text-align: center;
+    text-align: left;
     transition: var(--transition-base);
 }
 
@@ -627,7 +617,7 @@ body {
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 1rem;
+    margin: 0 0 1rem 0;
     background: var(--bg-secondary);
     border: 3px solid var(--border);
     transition: var(--transition-base);
