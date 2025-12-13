@@ -449,7 +449,7 @@ body {
 .question-card h4 {
     font-family: var(--font-display);
     font-size: 1.125rem;
-    color: var(--secondary);
+    color: var(--primary);
     margin-bottom: 0.75rem;
 }
 
