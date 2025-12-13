@@ -243,11 +243,13 @@ body {
 }
 
 .hero-meta {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     margin-bottom: 2.5rem;
-    flex-wrap: wrap;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meta-item {
@@ -772,7 +774,7 @@ body {
     }
     
     .hero-meta {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     
