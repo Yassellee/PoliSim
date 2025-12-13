@@ -261,13 +261,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(10px);
-    transition: var(--transition-base);
-}
-
-.meta-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(6, 182, 212, 0.3);
-    transform: translateY(-2px);
 }
 
 .meta-icon {
@@ -439,13 +432,6 @@ body {
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid var(--border);
-    transition: var(--transition-base);
-}
-
-.question-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-    border-color: transparent;
 }
 
 .question-icon {
@@ -611,11 +597,6 @@ body {
 
 .organizer-card {
     text-align: center;  /* Change from 'left' to 'center' */
-    transition: var(--transition-base);
-}
-
-.organizer-card:hover {
-    transform: translateY(-4px);
 }
 
 .organizer-avatar {
@@ -627,10 +608,15 @@ body {
     background: var(--bg-secondary);
     border: 3px solid var(--border);
     transition: var(--transition-base);
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.organizer-card:hover .organizer-avatar {
+.organizer-avatar:hover {
     border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .organizer-avatar img {
@@ -675,13 +661,6 @@ body {
     border-radius: 16px;
     text-align: center;
     border: 1px solid var(--border);
-    transition: var(--transition-base);
-}
-
-.info-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-    border-color: var(--primary);
 }
 
 .info-icon {
