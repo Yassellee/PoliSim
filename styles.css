@@ -606,11 +606,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     gap: 2rem;
-    justify-items: start;
+    justify-content: center;  /* Add this to center the grid itself */
 }
 
 .organizer-card {
-    text-align: left;
+    text-align: center;  /* Change from 'left' to 'center' */
     transition: var(--transition-base);
 }
 
@@ -623,7 +623,7 @@ body {
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 0 1rem 0;
+    margin: 0 auto 1rem auto;  /* Change from '0 0 1rem 0' to center the avatar */
     background: var(--bg-secondary);
     border: 3px solid var(--border);
     transition: var(--transition-base);
