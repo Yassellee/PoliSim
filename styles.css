@@ -598,9 +598,11 @@ body {
    ======================================== */
 .organizers-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 200px);
     gap: 2rem;
     justify-items: start;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .organizer-card {
