@@ -223,7 +223,7 @@ class Navigation {
 class ScrollAnimations {
     constructor() {
         this.animatedElements = document.querySelectorAll(
-            '.section-header, .question-card, .detail-card, .organizer-card, .info-card'
+            '.section-header, .question-card, .detail-card, .organizer-card, .info-card, .template-card'
         );
         
         this.init();
