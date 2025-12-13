@@ -244,24 +244,69 @@ body {
 
 .hero-meta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
     margin-bottom: 2.5rem;
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .meta-item {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: var(--transition-base);
 }
 
-.meta-item svg {
-    color: var(--accent);
+.meta-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(6, 182, 212, 0.3);
+    transform: translateY(-2px);
+}
+
+.meta-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(6, 182, 212, 0.15);
+    border-radius: 10px;
+    color: var(--accent-light);
+}
+
+.meta-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.meta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.meta-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.meta-value {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.4;
 }
 
 .hero-cta {
@@ -729,6 +774,12 @@ body {
 /* ========================================
    Responsive Design
    ======================================== */
+@media (max-width: 1024px) {
+    .hero-meta {
+        max-width: 600px;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --section-padding: 4rem;
@@ -776,6 +827,21 @@ body {
     .hero-meta {
         grid-template-columns: 1fr;
         gap: 1rem;
+        max-width: 100%;
+    }
+    
+    .meta-item {
+        padding: 1rem;
+    }
+    
+    .meta-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .meta-icon svg {
+        width: 18px;
+        height: 18px;
     }
     
     .questions-grid {
