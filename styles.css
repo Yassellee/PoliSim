@@ -536,55 +536,21 @@ body {
     line-height: 1.6;
 }
 
-.cfp-templates {
+.cfp-toggle-buttons {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 0.5rem 0;
+    flex-wrap: wrap;
 }
 
-.templates-label {
-    color: var(--text-secondary);
-    font-weight: 500;
-    font-size: 0.95rem;
-    margin-right: 0.5rem;
+.toggle-section {
+    flex: 1;
+    min-width: 200px;
 }
 
-.template-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: var(--transition-fast);
-}
-
-.template-link:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
-}
-
-.template-link svg {
-    flex-shrink: 0;
-}
-
-.example-papers-section {
-    margin-bottom: 1.5rem;
-    padding: 0.5rem 0;
-}
-
-.example-papers-button {
+.toggle-button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -598,31 +564,31 @@ body {
     font-family: var(--font-primary);
     cursor: pointer;
     transition: var(--transition-fast);
-    width: fit-content;
+    width: 100%;
 }
 
-.example-papers-button:hover {
+.toggle-button:hover {
     border-color: var(--primary);
     color: var(--primary);
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
 }
 
-.example-papers-button svg:first-child {
+.toggle-button svg:first-child {
     flex-shrink: 0;
 }
 
-.example-papers-button .chevron-icon {
+.toggle-button .chevron-icon {
     flex-shrink: 0;
     transition: transform var(--transition-base);
     margin-left: auto;
 }
 
-.example-papers-button.expanded .chevron-icon {
+.toggle-button.expanded .chevron-icon {
     transform: rotate(180deg);
 }
 
-.example-papers-list {
+.toggle-list {
     display: none;
     margin-top: 1rem;
     padding-left: 0;
@@ -633,10 +599,37 @@ body {
     opacity: 0;
 }
 
-.example-papers-list.expanded {
+.toggle-list.expanded {
     display: block;
     max-height: 2000px;
     opacity: 1;
+}
+
+.template-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--primary);
+    border-radius: 4px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.template-link:hover {
+    background: rgba(37, 99, 235, 0.05);
+    border-left-color: var(--primary-light);
+    transform: translateX(4px);
+    color: var(--primary);
+}
+
+.template-link svg {
+    flex-shrink: 0;
 }
 
 .example-paper-link {
@@ -959,21 +952,20 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .cfp-templates {
+    .cfp-toggle-buttons {
         flex-direction: column;
-        align-items: flex-start;
         gap: 0.75rem;
     }
     
-    .templates-label {
-        margin-right: 0;
-        margin-bottom: 0.25rem;
-    }
-    
-    .example-papers-button {
+    .toggle-section {
         width: 100%;
     }
     
+    .toggle-button {
+        width: 100%;
+    }
+    
+    .template-link,
     .example-paper-link {
         font-size: 0.85rem;
         padding: 0.65rem 0.85rem;

@@ -143,39 +143,47 @@
                     simulation for policy. Encore submissions of relevant published work are welcome.
                 </p>
                 
-                <div class="cfp-templates">
-                    <span class="templates-label">Templates:</span>
-                    <a href="assets/templates/polisim_word_template.docx" download class="template-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                        <span>Word</span>
-                    </a>
-                    <a href="assets/templates/polisim_latex_template.zip" download class="template-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                        <span>LaTeX</span>
-                    </a>
-                    <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc" target="_blank" rel="noopener noreferrer" class="template-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        <span>Overleaf</span>
-                    </a>
-                </div>
-                
-                <div class="example-papers-section">
-                    <button class="example-papers-button" id="example-papers-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                        <span>Example Papers</span>
-                        <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="example-papers-list" id="example-papers-list">
-                        <a href="assets/papers/sample1.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">What Makes LLM Agent Simulations Useful for Policy? Insights from an Iterative Design Engagement in Emergency Preparedness</a>
-                        <a href="assets/papers/sample2.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Can a Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? — A Case Study on Vaccine Hesitancy</a>
-                        <a href="assets/papers/sample3.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Sotopia: Interactive Evaluation for Social Intelligence in Language Agents</a>
-                        <a href="assets/papers/sample4.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Sotopia-S4<sup>4</sup>: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation</a>
-                        <a href="assets/papers/sample5.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">The Future of HCI-Policy Collaboration</a>
-                        <a href="assets/papers/sample6.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Generative Agents: Interactive Simulacra of Human Behavior</a>
-                        <a href="assets/papers/sample7.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Agentic AI for Sustainable Development: Leveraging Large Language Model-Enhanced Agent-Based Modeling for Complex Policy Strategies</a>
-                        <a href="assets/papers/sample8.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Validation Is the Central Challenge for Generative Social Simulation: A Critical Review of LLMs in Agent-Based Modeling</a>
-                        <a href="assets/papers/sample9.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Large Language Models That Replace Human Participants Can Harmfully Misportray and Flatten Identity Groups</a>
-                        <a href="assets/papers/sample10.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Position: LLM Social Simulations Are a Promising Research Method</a>
+                <div class="cfp-toggle-buttons">
+                    <div class="toggle-section">
+                        <button class="toggle-button" id="templates-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <span>Templates</span>
+                            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="toggle-list" id="templates-list">
+                            <a href="assets/templates/polisim_word_template.docx" download class="template-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>Word</span>
+                            </a>
+                            <a href="assets/templates/polisim_latex_template.zip" download class="template-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>LaTeX</span>
+                            </a>
+                            <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc" target="_blank" rel="noopener noreferrer" class="template-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <span>Overleaf</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle-section">
+                        <button class="toggle-button" id="example-papers-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <span>Example Papers</span>
+                            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="toggle-list" id="example-papers-list">
+                            <a href="assets/papers/sample1.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">What Makes LLM Agent Simulations Useful for Policy? Insights from an Iterative Design Engagement in Emergency Preparedness</a>
+                            <a href="assets/papers/sample2.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Can a Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? — A Case Study on Vaccine Hesitancy</a>
+                            <a href="assets/papers/sample3.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Sotopia: Interactive Evaluation for Social Intelligence in Language Agents</a>
+                            <a href="assets/papers/sample4.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Sotopia-S<sup>4</sup>: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation</a>
+                            <a href="assets/papers/sample5.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">The Future of HCI-Policy Collaboration</a>
+                            <a href="assets/papers/sample6.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Generative Agents: Interactive Simulacra of Human Behavior</a>
+                            <a href="assets/papers/sample7.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Agentic AI for Sustainable Development: Leveraging Large Language Model-Enhanced Agent-Based Modeling for Complex Policy Strategies</a>
+                            <a href="assets/papers/sample8.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Validation Is the Central Challenge for Generative Social Simulation: A Critical Review of LLMs in Agent-Based Modeling</a>
+                            <a href="assets/papers/sample9.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Large Language Models That Replace Human Participants Can Harmfully Misportray and Flatten Identity Groups</a>
+                            <a href="assets/papers/sample10.pdf" target="_blank" rel="noopener noreferrer" class="example-paper-link">Position: LLM Social Simulations Are a Promising Research Method</a>
+                        </div>
                     </div>
                 </div>
                 

@@ -254,15 +254,15 @@ class ScrollAnimations {
 }
 
 // ========================================
-// Example Papers Toggle
+// Toggle Buttons
 // ========================================
 
-class ExamplePapersToggle {
-    constructor() {
-        this.toggleButton = document.getElementById('example-papers-toggle');
-        this.papersList = document.getElementById('example-papers-list');
+class ToggleButton {
+    constructor(buttonId, listId) {
+        this.toggleButton = document.getElementById(buttonId);
+        this.toggleList = document.getElementById(listId);
         
-        if (this.toggleButton && this.papersList) {
+        if (this.toggleButton && this.toggleList) {
             this.init();
         }
     }
@@ -273,10 +273,10 @@ class ExamplePapersToggle {
             
             if (isExpanded) {
                 this.toggleButton.classList.remove('expanded');
-                this.papersList.classList.remove('expanded');
+                this.toggleList.classList.remove('expanded');
             } else {
                 this.toggleButton.classList.add('expanded');
-                this.papersList.classList.add('expanded');
+                this.toggleList.classList.add('expanded');
             }
         });
     }
@@ -296,8 +296,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize scroll animations
     new ScrollAnimations();
     
-    // Initialize example papers toggle
-    new ExamplePapersToggle();
+    // Initialize toggle buttons
+    new ToggleButton('templates-toggle', 'templates-list');
+    new ToggleButton('example-papers-toggle', 'example-papers-list');
     
     // Add loading complete class
     document.body.classList.add('loaded');
