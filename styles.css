@@ -610,6 +610,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-items: center;
+    justify-self: start;
 }
 
 .organizer-card {
