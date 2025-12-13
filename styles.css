@@ -596,13 +596,17 @@ body {
 /* ========================================
    Organizers Section
    ======================================== */
+#organizers .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .organizers-grid {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     gap: 2rem;
     justify-items: start;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 .organizer-card {
