@@ -254,6 +254,35 @@ class ScrollAnimations {
 }
 
 // ========================================
+// Example Papers Toggle
+// ========================================
+
+class ExamplePapersToggle {
+    constructor() {
+        this.toggleButton = document.getElementById('example-papers-toggle');
+        this.papersList = document.getElementById('example-papers-list');
+        
+        if (this.toggleButton && this.papersList) {
+            this.init();
+        }
+    }
+    
+    init() {
+        this.toggleButton.addEventListener('click', () => {
+            const isExpanded = this.toggleButton.classList.contains('expanded');
+            
+            if (isExpanded) {
+                this.toggleButton.classList.remove('expanded');
+                this.papersList.classList.remove('expanded');
+            } else {
+                this.toggleButton.classList.add('expanded');
+                this.papersList.classList.add('expanded');
+            }
+        });
+    }
+}
+
+// ========================================
 // Initialize Everything
 // ========================================
 
@@ -266,6 +295,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize scroll animations
     new ScrollAnimations();
+    
+    // Initialize example papers toggle
+    new ExamplePapersToggle();
     
     // Add loading complete class
     document.body.classList.add('loaded');

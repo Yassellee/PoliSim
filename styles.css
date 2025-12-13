@@ -579,6 +579,87 @@ body {
     flex-shrink: 0;
 }
 
+.example-papers-section {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.example-papers-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    width: fit-content;
+}
+
+.example-papers-button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+}
+
+.example-papers-button svg:first-child {
+    flex-shrink: 0;
+}
+
+.example-papers-button .chevron-icon {
+    flex-shrink: 0;
+    transition: transform var(--transition-base);
+    margin-left: auto;
+}
+
+.example-papers-button.expanded .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.example-papers-list {
+    display: none;
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base), opacity var(--transition-base);
+    opacity: 0;
+}
+
+.example-papers-list.expanded {
+    display: block;
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.example-paper-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--primary);
+    border-radius: 4px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    transition: var(--transition-fast);
+}
+
+.example-paper-link:hover {
+    background: rgba(37, 99, 235, 0.05);
+    border-left-color: var(--primary-light);
+    transform: translateX(4px);
+    color: var(--primary);
+}
+
 /* ========================================
    Organizers Section
    ======================================== */
@@ -887,6 +968,15 @@ body {
     .templates-label {
         margin-right: 0;
         margin-bottom: 0.25rem;
+    }
+    
+    .example-papers-button {
+        width: 100%;
+    }
+    
+    .example-paper-link {
+        font-size: 0.85rem;
+        padding: 0.65rem 0.85rem;
     }
     
     .footer-content {
