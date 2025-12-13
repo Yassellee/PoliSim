@@ -603,15 +603,13 @@ body {
     justify-items: center;
 }
 
-/* Wrapper for the last 3 items to center them */
+/* Wrapper for the last 3 items */
 .organizers-row-last {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-items: center;
-    max-width: calc((100% - 3 * 2rem) / 4 * 3 + 2 * 2rem);
-    margin: 0 auto;
 }
 
 .organizer-card {
