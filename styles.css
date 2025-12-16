@@ -300,6 +300,15 @@ body {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-note {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-top: 0.25rem;
 }
 
 .hero-cta {
@@ -764,6 +773,15 @@ body {
     font-weight: 600;
     color: var(--secondary);
     margin-bottom: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-date-note {
+    font-size: 0.7rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-top: 0.25rem;
 }
 
 .info-note {
