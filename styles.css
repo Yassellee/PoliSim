@@ -311,6 +311,15 @@ body {
     margin-top: 0.25rem;
 }
 
+.date-note a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.date-note a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
 .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -782,6 +791,15 @@ body {
     color: var(--text-light);
     font-weight: 400;
     margin-top: 0.25rem;
+}
+
+.info-date-note a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.info-date-note a:hover {
+    color: var(--primary);
 }
 
 .info-note {
