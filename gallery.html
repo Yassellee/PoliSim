@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>Virtual Gallery — PoliSim@CHI 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Three.js Canvas -->
+    <canvas id="gallery-canvas"></canvas>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>PoliSim Virtual Gallery</h2>
+            <p class="loading-status">Loading 3D environment...</p>
+        </div>
+    </div>
+
+    <!-- Entry Overlay -->
+    <div id="entry-overlay" class="hidden">
+        <div class="entry-content">
+            <div class="entry-badge">PoliSim@CHI 2026</div>
+            <h1>Virtual Paper Gallery</h1>
+            <p class="entry-description">Explore 25 accepted papers in an immersive 3D gallery space</p>
+            <div class="entry-controls" id="desktop-instructions">
+                <div class="control-item"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> <span>Move</span></div>
+                <div class="control-item"><kbd>Drag</kbd> <span>Look around</span></div>
+                <div class="control-item"><kbd>Click</kbd> <span>View paper</span></div>
+            </div>
+            <div class="entry-controls" id="mobile-instructions" style="display:none;">
+                <div class="control-item"><span>Left thumb</span> <span>Move</span></div>
+                <div class="control-item"><span>Right thumb</span> <span>Look around</span></div>
+                <div class="control-item"><span>Tap frame</span> <span>View paper</span></div>
+            </div>
+            <button id="enter-btn">Enter Gallery</button>
+            <a href="index.html" class="entry-back">Back to Workshop Site</a>
+        </div>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+        <a id="back-link" href="index.html" title="Back to PoliSim">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            PoliSim
+        </a>
+        <div id="controls-hint">
+            <span class="desktop-only">WASD Move &middot; Drag to Look &middot; Click Frame to Read</span>
+            <span class="mobile-only">Joystick to move &middot; Drag to look &middot; Tap frame to read</span>
+        </div>
+        <canvas id="minimap"></canvas>
+    </div>
+
+    <!-- Paper Preview Panel -->
+    <div id="paper-preview" class="hidden">
+        <div class="preview-number"></div>
+        <h3 class="preview-title"></h3>
+        <p class="preview-authors"></p>
+        <p class="preview-abstract"></p>
+        <div class="preview-hint">
+            <span class="desktop-only">Click to read more</span>
+            <span class="mobile-only">Tap to read more</span>
+        </div>
+    </div>
+
+    <!-- Paper Detail Modal -->
+    <div id="paper-modal" class="hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-number"></div>
+            <h2 class="modal-title"></h2>
+            <div class="modal-authors"></div>
+            <div class="modal-abstract-label">Abstract</div>
+            <div class="modal-abstract"></div>
+            <div class="modal-actions"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls" class="hidden">
+        <div id="joystick-zone">
+            <div id="joystick-base">
+                <div id="joystick-thumb"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="gallery.js"></script>
+</body>
+</html>
