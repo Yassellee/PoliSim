@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "site",
+      "runtimeExecutable": "/opt/homebrew/bin/npx",
+      "runtimeArgs": ["serve", "-l", "8123", "."],
+      "port": 8123
+    },
+    {
       "name": "gallery",
       "runtimeExecutable": "/opt/homebrew/bin/python3",
       "runtimeArgs": ["/tmp/polisim_serve.py"],
