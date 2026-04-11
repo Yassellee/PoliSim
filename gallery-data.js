@@ -1,280 +1,291 @@
 export const papers = [
   {
     id: 1,
-    title: "What Makes LLM Agent Simulations Useful for Policy? Insights from an Iterative Design Engagement in Emergency Preparedness",
+    title: "A Cross-Linguistic (Chinese-English) Study of Agent Adaptation under Content Moderation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Wen-Tzu Huang", affiliation: "Digital Content and Technologies National Chengchi University Taipei, Taiwan", email: "cozy.w2000@gmail.com", website: null, bio: null },
+      { name: "Yoyo Tsung-Yu Hou", affiliation: "Digital Content and Technologies National Chengchi University Taipei, Taiwan", email: "yoyohou@nccu.edu.tw", website: null, bio: null }
     ],
-    abstract: "We present findings from a year-long iterative design engagement with emergency preparedness professionals, exploring how LLM-based agent simulations can support policy development. Through co-design workshops and prototype evaluations, we identify key factors that make simulations useful for practitioners, including scenario fidelity, stakeholder representativeness, and interpretability of emergent behaviors. Our work reveals that usefulness hinges not on simulation accuracy alone, but on how well the tool supports practitioners' existing reasoning processes.",
-    pdfUrl: "assets/papers/sample1.pdf",
-    posterUrl: null
+    abstract: "Policy-oriented LLM agent simulations often treat language as a neutral channel, but communication under regulation may depend on the linguistic system itself. We study content moderation as a policy intervention and ask how language form might change its downstream effects. In a Chinese-English comparison with matched tasks and calibrated enforcement, we examine how writing-system affordances shape indirect expression and how agents adapt over repeated interactions. We focus on governancerelevant outcomes, including coordination cost, convention formation, and information recovery accuracy under constraint.",
+    pdfUrl: "assets/papers/accepted_papers/A_Cross-Linguistic_Chinese-English_Study_of_Agent_Adaptation_under_Content_Moder.pdf",
+    videoUrl: null
   },
   {
     id: 2,
-    title: "Can a Society of Generative Agents Simulate Human Behavior and Inform Public Health Policy? A Case Study on Vaccine Hesitancy",
+    title: "Accuracy, Diversity, and Reflection: Purpose-driven Evaluation for Social Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null },
-      { name: "Author 3", affiliation: "Affiliation 3", email: "author3@example.com", website: null, bio: null }
+      { name: "Heechan Lee", affiliation: "School of Computing, KAIST", email: "heechan@kaist.ac.kr", website: "https://heechanlee.com", bio: null },
+      { name: "Joseph Seering", affiliation: "School of Computing, KAIST", email: "seering@kaist.ac.kr", website: "https://joseph.seering.org", bio: null }
     ],
-    abstract: "This paper investigates whether populations of LLM-driven generative agents can realistically simulate public health dynamics, using vaccine hesitancy as a case study. We instantiate a community of 1,000 agents with diverse demographic profiles, social networks, and information environments. Our simulation reproduces several empirically observed phenomena including echo chamber formation, trust erosion through misinformation exposure, and the disproportionate influence of community leaders. We discuss implications for using such simulations to pre-test public health communication strategies.",
-    pdfUrl: "assets/papers/sample2.pdf",
-    posterUrl: "assets/papers/poster2.pdf"
+    abstract: "With the rapid advancement of Large Language Models (LLMs), social simulations are evolving to capture richer interactions. However, current validation methodologies remain predominantly focused on predictive accuracy—assessing how closely outputs mimic ground truth data. In this position paper, we argue that this accuracy-centric view is insufficient, as simulations serve diverse purposes beyond prediction, such as exploring plausible futures and understanding underlying mechanisms. We propose a purpose-driven evaluation framework comprising three dimensions: Accuracy, Diversity, and Reflection. We define Accuracy and Diversity at micro-, meso-, and macro-levels, reflecting how social simulations should be valid not only in individual interactions but also in emergent group dynamics and aggregate outcomes, and that the methods for evaluating at each scale may be different. Furthermore, we introduce Reflection as a critical dimension to evaluate whether the simulation aids users in debugging assumptions (process) and interpreting outcomes (outcome). We conclude with guidelines for applying these complementary dimensions to establish the operational validity of LLM-based social simulations.",
+    pdfUrl: "assets/papers/accepted_papers/Accuracy_Diversity_and_Reflection_Purpose-driven_Evaluation_for_Social_Simulatio.pdf",
+    videoUrl: null
   },
   {
     id: 3,
-    title: "Sotopia: Interactive Evaluation for Social Intelligence in Language Agents",
+    title: "Anticipating Second-Order Dynamics in Protocol Design through Adversarial LLM Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Botao Amber Hu", affiliation: "University of Oxford", email: "botao.hu@cs.ox.ac.uk", website: "https://botao.hu", bio: "Botao 'Amber' Hu is a social computing researcher and award-winning experiential futures designer, currently a PhD candidate in Human Centred Computing at University of Oxford." },
+      { name: "Helena Rong", affiliation: "New York University Shanghai", email: "hr2703@nyu.edu", website: null, bio: null }
     ],
-    abstract: "Evaluating social intelligence in language agents requires going beyond static benchmarks. We introduce Sotopia, an interactive environment where agents engage in realistic social scenarios with defined goals and social norms. Our evaluation framework measures agents across multiple dimensions including goal completion, relationship maintenance, and norm adherence. Results reveal significant gaps between current LLMs' social capabilities and human performance, particularly in scenarios requiring long-term relationship management and cultural sensitivity.",
-    pdfUrl: "assets/papers/sample3.pdf",
-    posterUrl: null
+    abstract: "Governance protocols—the rules, norms, and technical standards that coordinate collective action—are notoriously difficult to evaluate before deployment. Once enacted, they may drift from intent, become jammed by adversarial actors, or ossify against necessary change. These second-order dynamics emerge from the situated reasoning of actors who were not in the room when the rules were written, making them invisible to conventional testing. We argue that large language models, grounded in deep synthetic personas, can serve as a pre-deployment stress-testing mechanism for governance protocols—surfacing identity-specific failure modes that neither classical agent-based modeling nor participatory design workshops can reach alone. We operationalize this argument through ProtoPoliSim, a working prototype that instantiates persona-driven agents inside the Protocol Futuring adversarial cycle—a structured Blue (build) / Red (attack) / Temporal Shift / Observer pipeline—to automatically elicit and classify second-order dynamics as structured simulation outputs. Each run produces a branching tree of protocol futures, with every node annotated for drift, jam, ossification, or reinterpretation. We present the system's architecture, demonstrate its interface, and discuss the open methodological and validation challenges this approach poses for the PoliSim community.",
+    pdfUrl: "assets/papers/accepted_papers/Anticipating_Second-Order_Dynamics_in_Protocol_Design_through_Adversarial_LLM_Si.pdf",
+    videoUrl: null
   },
   {
     id: 4,
-    title: "Sotopia-S⁴: A User-Friendly System for Flexible, Customizable, and Large-Scale Social Simulation",
+    title: "Belief Engine: Configurable Opinion Dynamics for Reliable Social Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Joshua C. Yang", affiliation: "ETH Zurich", email: "joyang@ethz.ch", website: "https://joshuacyang.com/", bio: "Joshua C. Yang is a postdoctoral researcher at ETH Zurich whose work explores how AI can be designed to serve society, especially democracy. Drawing on computational social choice, responsible AI, complex systems, and human-computer interaction, he studies digital democracy, collective decision-making, and pluralistic AI alignment. He also collaborates with governments and civic organisations in Switzerland and Taiwan to bring these ideas into real-world participatory processes." },
+      { name: "Maurice Flechtner", affiliation: "Centre for Democracy Aarau (ZDA), University of Zurich", email: "maurice.flechtner@zda.uzh.ch", website: null, bio: "Maurice Flechtner is a PhD candidate affiliated with the University of Zurich, the Zurich Centre for Democracy Studies (ZDA), and the Computational Social Science group at ETH Zurich. His research focuses on building a socio-technical framework for deliberative democracy in the 21st century, including the study of whether LLM agents can meaningfully deliberate and how DRI can be used to evaluate LLM deliberation. He is also involved in the AI4Deliberation project, which develops and tests AI-enabled tools and processes for large-scale, multimodal, and gamified democratic deliberation in public decision-making." },
+      { name: "Damian Dailisan", affiliation: "ETH Zurich", email: "damian.dailisan@gess.ethz.ch", website: "https://damiandailisan.com", bio: "Damian Dailisan is a postdoctoral researcher at ETH Zurich whose work sits at the intersection of physics, transportation, data science, and machine learning. He received his PhD in Physics in 2021, where he studied driving behaviour through computational traffic simulations and explored machine learning applications in transport research. His current research focuses on applying machine learning and AI to multi-agent systems, particularly in traffic and transportation." }
     ],
-    abstract: "Building on the Sotopia framework, we present Sotopia-S⁴, a system designed to make large-scale social simulation accessible to researchers without deep technical expertise. The system provides a visual interface for designing agent populations, defining social scenarios, and analyzing emergent behaviors. We demonstrate that Sotopia-S⁴ can scale to simulations of 10,000+ agents while maintaining behavioral coherence, and show how its customization features enable rapid prototyping of policy-relevant scenarios.",
-    pdfUrl: "assets/papers/sample4.pdf",
-    posterUrl: "assets/papers/poster4.pdf"
+    abstract: "Large Language Model (LLM) agents can debate fluently, but they do not reliably maintain beliefs across long interactions. This makes it difficult to use them for opinion-dynamics studies where trajectories must be stable, interpretable, and reproducible. We introduce the Belief Engine, a configurable belief architecture that externalises belief state and updates it from extracted arguments. The engine stores adjudicated evidence in memory and updates a bounded stance score using a simple Bayesian log-odds rule with tunable parameters controlling evidence sensitivity, anchoring, and asymmetric weighting. In controlled two-agent debates across topics, we show that Belief Engine produces stance trajectories that are smoother and more reproducible than LLM-based (Agentic) updating, and that its parameters provide monotonic control over persuadability and resistance. By separating what an agent says from how its beliefs are updated, the framework enables traceable and controllable opinion dynamics in LLM-agent simulations.",
+    pdfUrl: "assets/papers/accepted_papers/Belief_Engine_Configurable_Opinion_Dynamics_for_Reliable_Social_Simulation.pdf",
+    videoUrl: null
   },
   {
     id: 5,
-    title: "The Future of HCI-Policy Collaboration: Bridging Design Thinking and Governance",
+    title: "Can LLMs Infer Political Parties\' Strategic Behavior? Evidence from Spatial Voting Models",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null }
+      { name: "Yulu Pi", affiliation: "University of Duisburg-Essen", email: "yulu.pi@uni-due.de", website: "https://nikipi.github.io/", bio: "Yulu Pi is a Postdoctoral Research Associate at the University of Duisburg-Essen, where her work sits at the intersection of AI governance and human-computer interaction. She has led projects on explainable AI and LLMs in financial services in collaboration with the UK Financial Conduct Authority and co-designed the world's first open-access EU AI Act compliance toolkit at the Leverhulme Centre for the Future of Intelligence, University of Cambridge." },
+      { name: "Aojie Ju", affiliation: "University of Illinois Urbana-Champaign", email: "aojieju2@illinois.edu", website: null, bio: null }
     ],
-    abstract: "This position paper argues that the HCI community has an underutilized opportunity to reshape how policy is designed, tested, and implemented. Drawing on case studies from urban planning, healthcare regulation, and environmental policy, we outline a framework for HCI-policy collaboration that centers human experience in the policymaking process. We propose that LLM agent simulations can serve as a shared boundary object between designers and policymakers, enabling rapid iteration on policy proposals before real-world deployment.",
-    pdfUrl: "assets/papers/sample5.pdf",
-    posterUrl: null
+    abstract: "Before LLMs can credibly serve as political simulation agents to approximate political actors, they must first demonstrate an accurate understanding of the strategic behaviors they are expected to emulate. We introduce a validation task that tests this prerequisite: given only time-series data on party positions and vote shares from a Laver (2005) multiparty competition model, LLMs must infer which of five adaptive strategies governs each party's movement, without access to strategy labels. Across six model configurations spanning three families, overall accuracy ranges from 9.4\% to 39\%, with substantial variation by strategy type and model choice. These results reveal that current LLMs lack reliable comprehension of the competitive dynamics they would need to reproduce, raising a foundational concern for their ready deployment as simulation agents for political dynamics.",
+    pdfUrl: "assets/papers/accepted_papers/Can_LLMs_Infer_Political_Parties_Strategic_Behavior_Evidence_from_Spatial_Voting.pdf",
+    videoUrl: null
   },
   {
     id: 6,
-    title: "Generative Agents: Interactive Simulacra of Human Behavior",
+    title: "Carrier: An Experimental Platform for Multimodal Mixed-Agent Social Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Jiahao Eric Yang", affiliation: "Institute for Digital Security and Behaviour, University of Bath", email: "jy2154@bath.ac.uk", website: "https://www.jiahao-yang.com/", bio: "My research explores multimodal interaction and embodied intelligence, and leverages large-scale unstructured data to investigate digital and offline security challenges." },
+      { name: "Will Smith", affiliation: "Institute for Digital Security and Behaviour, University of Bath", email: "ws833@bath.ac.uk", website: null, bio: "My work centres on applying insights from social and behavioural psychology to inform evidence-based policy relating to emerging technologies, and in particular online safety." }
     ],
-    abstract: "We introduce generative agents—computational software agents that simulate believable human behavior. By combining a large language model with mechanisms for memory retrieval, reflection, and planning, we create agents that wake, perform daily activities, form opinions, and interact socially. In a sandbox environment inspired by The Sims, 25 generative agents produce emergent social behaviors including relationship formation, coordinated group activities, and information diffusion through social networks.",
-    pdfUrl: "assets/papers/sample6.pdf",
-    posterUrl: "assets/papers/poster6.pdf"
+    abstract: "Large Language Models (LLMs) increasingly demonstrate stable role enactment, socio-emotional attunement, and coordinated behavior in multi-agent contexts, suggesting that they can function as actors within collective social systems rather than isolated text-generation tools. These capacities are highly relevant to policymaking, where decisions are collective, high-stakes, and seldom permit controlled field experimentation. Mixed-agent simulation—combining humans, LLM agents, and scripted actors—provides an in silico paradigm for studying deliberation, coordination, and information diffusion under controlled variation. Yet existing systems are often bespoke and weakly instrumented, limiting construct validity and comparability. We introduce Carrier (https://www.carrierlab.org), an open-source platform for multimodal mixed-agent simulation. Carrier structures interaction into modular episodes and defined roles, enabling systematic manipulation of agency, authority, and disclosure. With standardized instrumentation and process tracing, it supports mechanism-focused analysis of coordination, delegation, responsibility attribution, and collective error detection in simulated policy contexts.",
+    pdfUrl: "assets/papers/accepted_papers/Carrier_An_Experimental_Platform_for_Multimodal_Mixed-Agent_Social_Simulation.pdf",
+    videoUrl: null
   },
   {
     id: 7,
-    title: "Agentic AI for Sustainable Development: Leveraging LLM-Enhanced Agent-Based Modeling for Complex Policy Strategies",
+    title: "Challenges in Using LLM Agents to Validate Agent Governance",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Ayana Hussain", affiliation: "Simon Fraser University", email: "ayana_hussain@sfu.ca", website: null, bio: null },
+      { name: "Ulrich Aïvodji", affiliation: "École de technologie supérieure", email: "ulrich.aivodji@etsmtl.ca", website: null, bio: null },
+      { name: "Héber H. Arcolezi", affiliation: "École de technologie supérieure", email: "heber.hwang-arcolezi@etsmtl.ca", website: null, bio: null }
     ],
-    abstract: "Sustainable development requires policies that account for complex interactions between economic, social, and environmental systems. We propose an approach that enhances traditional agent-based models with LLM-driven decision-making, enabling more realistic simulation of how individuals and organizations respond to sustainability policies. Applied to three case studies—carbon pricing, renewable energy adoption, and circular economy initiatives—our enhanced models capture behavioral nuances that traditional ABMs miss, leading to more robust policy recommendations.",
-    pdfUrl: "assets/papers/sample7.pdf",
-    posterUrl: null
+    abstract: "The increasing deployment of Large Language Models (LLMs) as autonomous agents has intensified the need for credible and trustworthy methods to evaluate governance interventions. Motivated by recent research, this work considers the use of LLM and agent-based simulations to evaluate AI agent governance mechanisms before real-world deployment. While conceptually appealing, this approach introduces various challenges. We examine several such problems, including: (1) obtaining ground truth for validation, (2) determining whether observed behaviors represent actual agent operations or simulation artifacts, (3) obtaining consent for data use, (4) addressing ethical concerns about computational surrogates replacing real users, and (5) preventing individual-and simulation-level homogeneity in simulations. We outline considerations based on documented limitations, and introduce three dimensions that help evaluate the strength of simulation findings, aiming to catalyze discussions on trustworthy and reliable evaluation methods for agent governance.",
+    pdfUrl: "assets/papers/accepted_papers/Challenges_in_Using_LLM_Agents_to_Validate_Agent_Governance.pdf",
+    videoUrl: null
   },
   {
     id: 8,
-    title: "Validation Is the Central Challenge for Generative Social Simulation: A Critical Review",
+    title: "CoSim: LLM-based Simulation System Trains Student Academia and Life Supporters to Communicate with College Students Experiencing Stress and Anxiety",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Jie Cai", affiliation: "Tsinghua University", email: "jie-cai@mail.tsinghua.edu.cn", website: null, bio: null },
+      { name: "Wenjing Deng", affiliation: "Tsinghua University", email: "dengwj24@mails.tsinghua.edu.cn", website: null, bio: null },
+      { name: "Yuxuan Li", affiliation: "Carnegie Mellon University", email: "yuxuanll@andrew.cmu.edu", website: null, bio: null },
+      { name: "Chun Yu", affiliation: "Tsinghua University", email: "chunyu@mail.tsinghua.edu.cn", website: null, bio: null }
     ],
-    abstract: "As LLM-based social simulations gain traction in policy research, the question of validation becomes critical. This review examines 47 recent papers employing generative agents for social simulation, categorizing their validation approaches and identifying systematic gaps. We find that most studies rely on surface-level plausibility checks rather than rigorous empirical validation. We propose a multi-level validation framework that addresses behavioral fidelity, structural validity, and predictive accuracy, and discuss the unique challenges that LLM-based simulations pose for established validation methodologies.",
-    pdfUrl: "assets/papers/sample8.pdf",
-    posterUrl: null
+    abstract: "Student Academia and Life Supporters (SALSs) at Chinese universities are a unique group often taking multiple roles (e.g., tutors, advisors, and psychological counselors) for student administration, but lack socio-technical support when dealing with students with stress and anxiety. LLM provides the opportunity to run simulations and provide rehearsal opportunity. Through a formative study involving five SALSs and 33 students, we developed CoSim, an LLM-based simulation system featuring 33 built-in agents that simulate these students' stress and anxiety in diverse scenarios, achieving 72% and 76% similarity. The think-aloud evaluation with 10 SALSs shows that (1) CoSim resonates with real students in expression, reasoning, and trust, with some limitations; (2) CoSim supports SALSs' reflection of communication strategies, but also causes an extra burden. This study contributes to the intersection of health and education through LLM-based simulation, offering design opportunities to support diverse stakeholders in education settings.",
+    pdfUrl: "assets/papers/accepted_papers/CoSim_LLM-based_Simulation_System_Trains_Student_Academia_and_Life_Supporters_to.pdf",
+    videoUrl: null
   },
   {
     id: 9,
-    title: "Large Language Models That Replace Human Participants Can Harmfully Misportray and Flatten Identity Groups",
+    title: "Cross-Cultural Simulation of Citizen Emotional Responses to Bureaucratic Red Tape Using LLM Agents",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null },
-      { name: "Author 3", affiliation: "Affiliation 3", email: "author3@example.com", website: null, bio: null }
+      { name: "Wanchun Ni", affiliation: "ETH Zurich", email: "wancni@ethz.ch", website: null, bio: "Wanchun is a PhD student working on Social Intelligence of AI agents under the supervision of Prof. Menna El-Assady." },
+      { name: "Jiugeng Sun", affiliation: "ETH Zurich", email: "jiugeng.sun@inf.ethz.ch", website: null, bio: null },
+      { name: "Yixian Liu", affiliation: "City University of Hong Kong", email: "yixianliu9-c@my.cityu.edu.hk", website: null, bio: null },
+      { name: "Mennatallah El-Assady", affiliation: "ETH Zurich", email: "menna.elassady@ai.ethz.ch", website: null, bio: null }
     ],
-    abstract: "The use of LLMs to simulate human research participants raises significant ethical concerns about representation and identity. Through a systematic evaluation across 12 demographic dimensions, we demonstrate that LLM agents tend to reproduce stereotypical behaviors, flatten within-group variation, and erase intersectional identities. These distortions are particularly concerning when simulations inform policy decisions that affect marginalized communities. We provide concrete guidelines for responsible use of LLM-based participant simulation and identify scenarios where such simulation should be avoided entirely.",
-    pdfUrl: "assets/papers/sample9.pdf",
-    posterUrl: "assets/papers/poster9.pdf"
+    abstract: "Improving policymaking is a central concern in public administration. Prior human subject studies reveal substantial cross-cultural differences in citizens' emotional responses to red tape during policy implementation. While LLM agents offer opportunities to simulate human-like responses and reduce experimental costs, their ability to generate culturally appropriate emotional responses to red tape remains unverified. To address this gap, we propose an evaluation framework for assessing LLMs' emotional responses to red tape across diverse cultural contexts.As a pilot study, we apply this framework to a single red-tape scenario. Our results show that all models exhibit limited alignment with human emotional responses, with notably weaker performance in Eastern cultures. Cultural prompting strategies prove largely ineffective in improving alignment. We further introduce RAMO, an interactive interface for simulating citizens' emotional responses to red tape and for collecting human data to improve models. The interface is publicly available at https://ramo-chi.ivia.ch.",
+    pdfUrl: "assets/papers/accepted_papers/Cross-Cultural_Simulation_of_Citizen_Emotional_Responses_to_Bureaucratic_Red_Tap.pdf",
+    videoUrl: null
   },
   {
     id: 10,
-    title: "Position: LLM Social Simulations Are a Promising Research Method",
+    title: "EduPolicySim: LLM-Agent Simulation for Navigating the Pedagogical Policy Space",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Weirui Peng", affiliation: "University of Michigan", email: "weiruip@umich.edu", website: "https://antelofski.github.io/wrp_web/", bio: "I'm a CSE PhD student at the University of Michigan, advised by Xu Wang and Eytan Adar. My research focuses on Human-AI collaboration, specifically designing intelligent tools that bridge the gap between human cognition and AI systems for complex tasks like collaborative work, design, and coding." },
+      { name: "Hyoungwook Jin", affiliation: "University of Michigan", email: "jinhw@umich.edu", website: "https://jhw123.github.io/", bio: "I am a PhD student at the University of Michigan, Computer Science and Engineering. I am working with Xu Wang and researchers at Lifelong Learning Lab." },
+      { name: "Ethan Beaird", affiliation: "University of Michigan", email: "beaird@umich.edu", website: null, bio: null },
+      { name: "Xu Wang", affiliation: "University of Michigan", email: "xwanghci@umich.edu", website: "https://web.eecs.umich.edu/~xwanghci/", bio: "Xu Wang is an Assistant Professor in Computer Science and Engineering and the School of Information (By courtesy) at the University of Michigan. Xu develops and advances techniques for creating intelligent tutoring systems to enable scalable expertise sharing and more efficient skill development for novice learners." }
     ],
-    abstract: "Despite valid concerns about fidelity and representation, we argue that LLM social simulations represent a genuinely promising research methodology for the social sciences and policy research. We outline five key advantages: rapid prototyping of social theories, ethical exploration of sensitive scenarios, scalability beyond traditional methods, accessibility to non-technical researchers, and the ability to explore counterfactual policy scenarios. We address common criticisms and propose a research agenda for establishing LLM simulation as a rigorous complement to existing methods.",
-    pdfUrl: "assets/papers/sample10.pdf",
-    posterUrl: null
+    abstract: "Pedagogical policy design requires navigating a combinatorially vast space of instructional choices—such as technique, dosage, and timing—whose effects interact in ways that are difficult to anticipate. Existing LLM-based student simulations operate at the micro level (individual learner responses) or meso level (classroom dynamics), but do not address macro-level policy evaluation. In this position paper, we propose EduPolicySim, a simulation framework that uses LLM agents as proxies for diverse student populations to support pedagogical policy exploration at scale. The framework operates in five stages: student profile configuration grounded in authentic artifacts, policy specification along multiple instructional dimensions, simulation and analysis of how learner populations respond to each policy, deliberative decision support that makes trade-offs among stakeholder priorities explicit, and co-evolutionary refinement using real-world outcome signals. EduPolicySim aims to surface hidden interdependencies among instructional decisions and scaffold evidence-informed policy making before costly classroom deployment.",
+    pdfUrl: "assets/papers/accepted_papers/EduPolicySim_LLM-Agent_Simulation_for_Navigating_the_Pedagogical_Policy_Space.pdf",
+    videoUrl: null
   },
   {
     id: 11,
-    title: "Simulating Legislative Deliberation: How LLM Agents Navigate Political Compromise",
+    title: "From Higher-Likelihood to Broader Coverage: Exploratory Policy simulation with LLM agents",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Hogyun Yoo", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "yoohogyun@yonsei.ac.kr", website: null, bio: "Hogyun Yoo is a research assistant in Creative Technology Management at Yonsei University and is affiliated with the Human Artificial Intelligence Research Lab. He is driven by a dual passion for AI to assist humans better and to utilize AI as a tool to understand complex human behavior better" },
+      { name: "Keeheon Lee", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "keeheon@yonsei.ac.kr", website: null, bio: "Keeheon Lee is a Professor at Yonsei University and he leads the Human and Artificial Intelligence Research (HAIR) Lab. His research explores the intersection of AI governance, human-AI interaction, and data-driven policy, with a focus on using simulation and computational intelligence for social good. He is particularly interested in how LLM agent systems and social simulations can be leveraged to understand and optimize policy dynamics in complex sociotechnical systems." }
     ],
-    abstract: "We simulate multi-party legislative deliberation using LLM agents assigned distinct political ideologies, constituency pressures, and policy priorities. Our experiments reveal that LLM agents can produce surprisingly realistic negotiation dynamics, including logrolling, coalition formation, and strategic information withholding. However, we also identify systematic biases toward consensus that diverge from real legislative behavior. We discuss implications for using such simulations to anticipate legislative outcomes and design more effective policy proposals.",
-    pdfUrl: "assets/papers/sample1.pdf",
-    posterUrl: null
+    abstract: "Robust policy simulation requires identifying not only likely out comes but also diverse failure modes and edge cases. However, standard Large Language Model (LLM) agents typically converge on high-probability, profile-bounded trajectories, limiting their utility for exploratory analysis. To address this coverage bottleneck, we adopt enumeration as a turn-level action generation mechanism to elicit broader behavioral possibilities. We evaluate this approach in a rule-governed dormitory conflict scenario grounded in the Institutional Analysis and Development (IAD) framework. Comparing standard persona-prompted agents with enumeration-enhanced agents, we find that turn-level enumeration significantly expands semantic and behavioral diversity without compromising dialogue naturalness. Our analysis reveals that this method uncovers complex escalation patterns missed by standard approaches, demonstrating that shifting from likelihood-maximization to coverage-oriented generation enables LLM agents to serve as effective instruments for exploratory policy analysis",
+    pdfUrl: "assets/papers/accepted_papers/From_Higher-Likelihood_to_Broader_Coverage_Exploratory_Policy_simulation_with_LL.pdf",
+    videoUrl: "assets/videos/From_Higher-Likelihood_to_Broader_Coverage_Exploratory_Policy_simulation_with_LL.mp4"
   },
   {
     id: 12,
-    title: "Urban Mobility Policy Through the Lens of Agent Simulation: A Multi-City Study",
+    title: "From Prediction to Conditional Exploration in LLM Agent Simulations for AI Policy Governance",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Dilrukshi Gamage", affiliation: "University of Colombo School of Computing", email: "dilrukshi.gamage@gmail.com", website: null, bio: null }
     ],
-    abstract: "We deploy LLM agent simulations to study urban mobility policy across five cities with diverse transportation infrastructures. Agents are calibrated using census data and travel surveys, then exposed to policy interventions including congestion pricing, public transit expansion, and micro-mobility incentives. Our cross-city comparison reveals that policy effectiveness is highly context-dependent, challenging one-size-fits-all approaches. The simulation framework provides city planners with a tool for rapid policy prototyping before costly real-world pilots.",
-    pdfUrl: "assets/papers/sample2.pdf",
-    posterUrl: "assets/papers/poster4.pdf"
+    abstract: "Large Language Model (LLM)–based agent simulations are increasingly proposed as tools for informing AI governance. However, policymaking is inherently uncertain, high-stakes, and socially embedded. This position paper argues that LLM-agent simulations should not function as predictive policy engines but as structured uncertainty exploration systems. Drawing on generative agent architectures and recent multi-agent simulation work, I examine two challenges: interpreting conditional simulation outcomes under deep uncertainty, and establishing transparency in architecturally opaque systems. I propose a co-evolutionary framework integrating robustness stress-testing and layered auditability, reframing simulation from prediction toward conditional exploration and institutional accountability in AI policy design.",
+    pdfUrl: "assets/papers/accepted_papers/From_Prediction_to_Conditional_Exploration_in_LLM_Agent_Simulations_for_AI_Polic.pdf",
+    videoUrl: null
   },
   {
     id: 13,
-    title: "Trust Dynamics in AI-Mediated Public Services: An Agent-Based Exploration",
+    title: "From Plausible to Causal: Counterfactual Semantics for Policy Evaluation in Simulated Online Communities",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Agam Goyal", affiliation: "University of Illinois Urbana-Champaign", email: "agamg2@illinois.edu", website: "https://agoyal0512.github.io", bio: "Agam Goyal is a second-year Computer Science Ph.D. candidate at the University of Illinois Urbana-Champaign, advised by Eshwar Chandrasekharan and Hari Sundaram. His research sits at the intersection of NLP, HCI, and computational social science, asking how AI systems can learn what users value and surface information that faithfully reflects those preferences—spanning work on understanding community preferences at scale, building preference-aligned AI systems, and auditing distortions in AI-mediated information access. His work has appeared at CHI, ICWSM, ACL, EMNLP, and NAACL." },
+      { name: "Yian Wang", affiliation: "University of Illinois Urbana-Champaign", email: "yian3@illinois.edu", website: null, bio: null },
+      { name: "Eshwar Chandrasekharan", affiliation: "University of Illinois Urbana-Champaign", email: "eshwar@illinois.edu", website: null, bio: null },
+      { name: "Hari Sundaram", affiliation: "University of Illinois Urbana-Champaign", email: "hs1@illinois.edu", website: null, bio: null }
     ],
-    abstract: "As governments increasingly deploy AI systems in public services, understanding how citizen trust evolves becomes critical for policy design. We create an agent-based simulation where citizen agents interact with AI-mediated services across healthcare, education, and social welfare domains. Our model captures how individual experiences, social influence, and media narratives collectively shape trust trajectories. We find that transparency interventions have diminishing returns without concurrent improvements in service quality, suggesting that trust-building requires holistic policy approaches.",
-    pdfUrl: "assets/papers/sample3.pdf",
-    posterUrl: null
+    abstract: "LLM-based social simulations can generate believable community interactions, enabling \"policy wind tunnels\" where governance interventions are tested before deployment. But believability is not causality. Claims like \"intervention A reduces escalation\" require causal semantics that current simulation work typically does not specify. We propose adopting the causal counterfactual framework, distinguishing necessary causation (would the outcome have occurred without the intervention?) from sufficient causation (does the intervention reliably produce the outcome?). This distinction maps onto different stakeholder needs: moderators diagnosing incidents require evidence about necessity, while platform designers choosing policies require evidence about sufficiency. We formalize this mapping, show how simulation design can support estimation under explicit assumptions, and argue that the resulting quantities should be interpreted as simulator-conditional causal estimates whose policy relevance depends on simulator fidelity. Establishing this framework now is essential: it helps define what adequate fidelity means and moves the field from simulations that look realistic toward simulations that can support policy changes.",
+    pdfUrl: "assets/papers/accepted_papers/From_Plausible_to_Causal_Counterfactual_Semantics_for_Policy_Evaluation_in_Simul.pdf",
+    videoUrl: null
   },
   {
     id: 14,
-    title: "Calibrating Synthetic Populations: Demographic Fidelity in LLM Agent Simulations",
+    title: "Human-Simulation Interaction: From Prediction to Exploration in LLM Agent Simulations for Policy",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null },
-      { name: "Author 3", affiliation: "Affiliation 3", email: "author3@example.com", website: null, bio: null }
+      { name: "Huanxing Chen", affiliation: "Stanford University", email: "huanxing@stanford.edu", website: "https://huanx.ing", bio: "Hi! I'm Huanxing Chen, a cognitive science master's student at Stanford. I research and build exploration-centric systems at the intersection of generative agent simulations and tools for thought, and my master's thesis is on Representational Fidelity in Simulations, advised by Dr Jonne Kamphorst and Professor Michael Bernstein." }
     ],
-    abstract: "The policy relevance of LLM agent simulations depends fundamentally on whether synthetic populations faithfully represent real demographic distributions. We develop a systematic calibration pipeline that aligns agent attributes, behaviors, and social network structures with empirical data from national surveys. Evaluating across six policy domains, we show that uncalibrated simulations can produce misleading policy recommendations, while our calibration approach significantly improves alignment with observed population dynamics. We release our pipeline as an open-source toolkit for the research community.",
-    pdfUrl: "assets/papers/sample4.pdf",
-    posterUrl: "assets/papers/poster2.pdf"
+    abstract: "Agent-based models have historically served as tools for generative explanation, constructing testbeds in which candidate micro-level behavioral rules can be tested for their capacity to produce observed macro-level phenomena. The integration of Large Language Models into agent-based simulation has expanded what these models can represent, but it has also introduced an unexamined shift in how users engage them. We argue that current generative agent-based models (GABMs) inherit the dominant interaction metaphor of conversational LLM interfaces - a question-answer pattern that positions users as consumers of system output rather than explorers of a possibility space. In the context of policy, where problems are wicked and ground truth is unknowable in advance, this metaphor produces a trust deficit that cannot be resolved through improved model accuracy alone. We open a design space we call human-simulation interaction, and argue that warranted trust requires interaction metaphors that restore the exploratory capacity simulation has historically supported.",
+    pdfUrl: "assets/papers/accepted_papers/Human-Simulation_Interaction_From_Prediction_to_Exploration_in_LLM_Agent_Simulat.pdf",
+    videoUrl: null
   },
   {
     id: 15,
-    title: "Ethical Guardrails for Policy Simulation: A Framework for Responsible Innovation",
+    title: "Let Them Speak: Finding Who Policy Leaves Behind via Blind-Spot-Targeted LLM Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null }
+      { name: "Jaywoong Jeong", affiliation: "KAIST", email: "jaywoong.jeong@kaist.ac.kr", website: "https://jaywoong.me/", bio: "Jaywoong Jeong is an undergraduate researcher at KAIST pursuing an interdisciplinary approach to mathematics and design. His work focuses on trustworthy AI, human-AI collaboration, and designing AI systems that prioritize algorithmic fairness and positive social impact." }
     ],
-    abstract: "The growing use of LLM agent simulations for policy development raises novel ethical questions that existing frameworks inadequately address. We propose a comprehensive ethical framework encompassing four pillars: representational justice, simulation transparency, stakeholder participation, and harm prevention. Through consultations with ethicists, policymakers, and affected community members, we develop practical guidelines that balance innovation with responsibility. Our framework is designed to be integrated into the simulation development lifecycle rather than applied as a post-hoc review.",
-    pdfUrl: "assets/papers/sample5.pdf",
-    posterUrl: null
+    abstract: "LLM-based social simulation has gained attention as a tool for predicting policy outcomes, yet growing evidence suggests that LLMs cannot faithfully represent the full diversity of society. We turn this limitation into a feature. Rather than simulating all citizens, we propose Let Them Speak, a framework that deliberately identifies the people a policy structurally excludes and generates their voices. Given a policy text and demographic microdata, the system automatically discovers individuals at the boundary of eligibility—those excluded by narrow numerical margins or by gaps the law fails to anticipate—and instantiates them as LLM personas who articulate policy critiques endogenously, without researcher-injected hypotheses. Applied to South Korea's Jeonse Fraud Special Act, the framework's proposed amendment matched 5 of 8 criteria in the actual 2026 legislative revision, compared to 1 of 8 from a randomly sampled control group. These results suggest that targeted blind-spot discovery can yield more actionable legislative recommendations than untargeted simulation.",
+    pdfUrl: "assets/papers/accepted_papers/Let_Them_Speak_Finding_Who_Policy_Leaves_Behind_via_Blind-Spot-Targeted_LLM_Simu.pdf",
+    videoUrl: null
   },
   {
     id: 16,
-    title: "From Simulation to Action: How Policymakers Interpret and Use Agent-Based Evidence",
+    title: "Manners Maketh MAN: Multi-Agent Norm Dynamics under Cultural Moral Values",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Keeheon Lee", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "keeheon@yonsei.ac.kr", website: null, bio: "Keeheon Lee is a Professor at Yonsei University and leads the Human and Artificial Intelligence Research (HAIR) Lab. His research explores the intersection of AI governance, human-AI interaction, and data-driven policy, with a focus on using simulation and computational intelligence for social good. He is particularly interested in how LLM agent systems and social simulations can be leveraged to understand and optimize policy dynamics in complex sociotechnical systems." },
+      { name: "Kunhee Ryu", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "rgh00826@yonsei.ac.kr", website: null, bio: "Kunhee Ryu is a researcher in Human and Artificial Intelligence Research Lab, Yonsei University. His research lies at the intersection of large language models, multi-agent systems, and human-AI interaction, with a focus on reasoning, social dynamics, and the broader implications of AI in human contexts." },
+      { name: "Minje Kim", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "minjekim12@yonsei.ac.kr", website: null, bio: "Minje Kim is a researcher in Human and Artificial Intelligence Research Lab, Yonsei University. His research lies at the intersection of large language models, multi-agent systems, and human-AI interaction, with a focus on reasoning, social dynamics, and the broader implications of AI in human contexts." },
+      { name: "Hogyun Yoo", affiliation: "Yonsei University, Seoul, Republic of Korea", email: "yoohogyun@yonsei.ac.kr", website: null, bio: "Hogyun Yoo is a research assistant in Creative Technology Management at Yonsei University and is affiliated with the Human Artificial Intelligence Research Lab. He is driven by a dual passion for AI to assist humans better and to utilize AI as a tool to understand complex human behavior better" }
     ],
-    abstract: "While much research focuses on improving simulation fidelity, less attention has been paid to how policymakers actually interpret and act on simulation evidence. Through interviews with 32 policy professionals across four government agencies, we investigate the translation gap between simulation outputs and policy decisions. We identify five key barriers including outcome uncertainty communication, scenario comparability, and institutional trust. Based on these findings, we design and evaluate interactive visualization tools that significantly improve policymakers' ability to extract actionable insights from simulations.",
-    pdfUrl: "assets/papers/sample6.pdf",
-    posterUrl: null
+    abstract: "When people from different cultures live together, conflicts often arise—not because of bad intentions, but because shared rules in teract with different moral norms. Yet in real-world institutions, it is difficult to systematically test how population composition and rule design jointly shape collective outcomes. We study this question in a controlled setting using an LLM-based multi-agent dormitory simulator. Agents represent culture-conditioned moral preferences drawn from East Asian, North American, and European profiles, grounded in Moral Foundations Theory and equipped with episodic memory. The environment enforces explicit rule regimes (NoRules, Harmony, Liberty, Politeness) through both prompt level constraints and environment-level penalties. To quantify the gap between individually driven behavior and collective welfare, we introduce a QMIX-based credit assignment module that produces per-agent contribution signals without updating LLM parameters. Across 15 cultural compositions and 4 rule regimes (60 conditions), we evaluate welfare, equity, communication, and credit stability. Contrary to the cultural fit hypothesis, we find that culturally mixed groups under complementary rules outperform homogeneous groups by up to 16.2%, and that rule sensitivity itself constitutes a distinct cultural signature.",
+    pdfUrl: "assets/papers/accepted_papers/Manners_Maketh_MAN_Multi-Agent_Norm_Dynamics_under_Cultural_Moral_Values.pdf",
+    videoUrl: "assets/videos/Manners_Maketh_MAN_Multi-Agent_Norm_Dynamics_under_Cultural_Moral_Values.mp4"
   },
   {
     id: 17,
-    title: "Multi-Scale Agent Simulation for Climate Adaptation Policy",
+    title: "Mechanism Plausibility in Generative Agent-Based Modeling",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null },
-      { name: "Author 3", affiliation: "Affiliation 3", email: "author3@example.com", website: null, bio: null }
+      { name: "Patrick Zhao", affiliation: "Simon Fraser University", email: "patrick_zhao@sfu.ca", website: "https://www.patrickzhao.xyz/", bio: "Patrick is a MSc thesis student at Simon Fraser University, advised by Dr. Nicholas Vincent at the People and Data-Centric Computing Research Group. His primary interests lie in human-centered AI, AI safety, and computational social science. He is currently exploring the epistemological and methodological challenges that arise when using large language models as cognitive agents in agent-based models." },
+      { name: "David Huu Pham", affiliation: "Simon Fraser University", email: "dhpham@sfu.ca", website: "https://www.dhpham.com/", bio: "David is interested in developing better benchmarks in AI, implementing ethical data policies, improving data literacy, advocating for public AI infrastructure, and is currently working with great teams at Aspen Digital and the Public AI Network towards these goals! For his side quests, he is also pursuing the integration of differential privacy methods with social media networks, and developing social simulations via agent-based models." },
+      { name: "Nicholas Vincent", affiliation: "Simon Fraser University", email: "nvincent@sfu.ca", website: "https://www.nickmvincent.com/", bio: "Prof. Nick Vincent is an Assistant Professor in Computing Science at Simon Fraser University. He studies the content ecosystems and data supply chains that fuel data-dependent technologies like search engines, recommender systems, and generative AI. This involves exploring avenues for people to control how data flows and participate in the governance of AI systems. The overarching goal of this research is to work towards highly capable and widely beneficial AI technologies that mitigate – rather than exacerbate – inequalities in wealth and power." }
     ],
-    abstract: "Climate adaptation policy must operate across multiple scales—from individual household decisions to regional infrastructure planning. We develop a multi-scale LLM agent simulation framework that models interactions between household agents, community organizations, local governments, and regional planning bodies. Applied to flood adaptation in coastal communities, our simulation captures cascading effects of policy interventions across scales. Results highlight how individual-level behavioral responses can amplify or undermine the effectiveness of top-down policy measures.",
-    pdfUrl: "assets/papers/sample7.pdf",
-    posterUrl: "assets/papers/poster6.pdf"
+    abstract: "Large language models (LLMs) can generate high-level phenomena without explicitly programmed rules. This capability has led to their adoption within agent-based models (ABMs) and social simulations. Recent research papers aim to test whether they are capable of generating different phenomena of interest, for example, human behavior on social media platforms or performance in game-theoretic scenarios. However, capability, prediction, and explanation are different – drawing from the philosophy of science and mechanisms literature, explanation requires showing, to some degree, how a phenomenon is produced by related organized entities and activities. For modelers, describing the characteristics of an experiment or whether a simulation provides progress in capability (or explanation), can be particularly difficult without first being grounded in potentially distant research areas. We integrate recent work on LLM-ABMs with contemporary philosophy of science literature and make two main contributions. First, we gather insights from modeling and mechanisms literature and use them to operationalize a definition of plausibility in a four-level scale. Our scale separates the evaluation of a model's generative sufficiency (ability to reproduce a phenomenon) from its mechanistic plausibility (how the phenomenon could be produced), and clarifies the distinct roles of different models, such as predictive and explanatory ones. We introduce this as the Mechanism Plausibility Scale. Second, we discuss the early wave of LLM-ABM research and find that papers often conflate evidence of Agent-level functionality with claims about emergent ABM-level phenomenon, relying on `believability' metrics that focus on generative sufficiency. Our discussion section speaks on how these findings echo long-standing problems in classical ABM, historical harms caused by these issues, and broader ethical and epistemic concerns about using LLMs in modeling. Using the findings from our review, we offer the scale as a practical heuristic in the form of a checklist which can clarify how simulations at different levels of plausibility may be useful. We hope the activity of filling out the scale will help new modelers ground the epistemic contribution of their simulations.",
+    pdfUrl: "assets/papers/accepted_papers/Mechanism_Plausibility_in_Generative_Agent-Based_Modeling.pdf",
+    videoUrl: null
   },
   {
     id: 18,
-    title: "The Representation Gap: Cultural Bias in LLM-Driven Policy Simulations",
+    title: "Procedural Parity, Outcome Mismatch: Evaluating Human vs LLM Deliberation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Maurice Flechtner", affiliation: "University of Zurich, ETH Zurich", email: "maurice.flechtner@zda.uzh.ch", website: null, bio: "Maurice Flechtner is a PhD student at the University of Zurich and ETH Zurich. His research focusses on digital deliberation." }
     ],
-    abstract: "LLM agent simulations inherit the cultural biases of their training data, potentially leading to policy recommendations that disadvantage non-Western or minority communities. We conduct a cross-cultural evaluation of agent behavior across 15 policy scenarios, comparing simulated responses with empirical data from six countries. Our analysis reveals systematic Western-centric biases in economic decision-making, social norm enforcement, and risk perception. We propose debiasing strategies including culturally-grounded prompting and diverse training data augmentation, evaluating their effectiveness across scenarios.",
-    pdfUrl: "assets/papers/sample8.pdf",
-    posterUrl: null
+    abstract: "As HCI increasingly studies AI-mediated and human–AI deliber- ation in civic contexts, a central open question is whether LLM agents possess the deliberative capabilities that such applications assume. We introduce DelibSim, a simulation framework that evalu- ates LLM-only multi-agent deliberation using two political science measures—AQuA (an automated Discourse Quality Index) for proce- dural quality and the Deliberative Reason Index (DRI) for epistemic outcomes—comparing both against human baselines from real delib- erative processes. Across 1,980 small-group deliberations spanning 11 model configurations and 12 policy topics, LLMs reach near- human procedural quality (AQuA = 2.94 vs. 2.98), but only exhibit small and topic-dependent outcome gains. Normative prompting produces a modest increase in absolute ΔDRI relative to a survey- only baseline (ATE = 0.029, 𝑝Holm = 0.0146), while basic prompting yields no robust improvement. Compared to human groups, LLM gains are smaller and display much lower perspective heterogene- ity. These results suggest that similar procedural quality can mask fundamentally different outcome dynamics, raising questions about the interchangeability of LLM and human deliberation for civic applications.",
+    pdfUrl: "assets/papers/accepted_papers/Procedural_Parity_Outcome_Mismatch_Evaluating_Human_vs_LLM_Deliberation.pdf",
+    videoUrl: null
   },
   {
     id: 19,
-    title: "Real-Time Policy Dashboards: Bridging Simulation and Decision-Making",
+    title: "SIREN: Silicon A/B Testing for Emergency Alerts",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Vrinda Malhotra", affiliation: "George Mason University", email: "vmalhot2@gmu.edu", website: "https://thechirpywitch.github.io/", bio: "Vrinda is a PhD student in Computational Sciences & Informatics at George Mason University, where she is advised by Robert Axtell. Her research combines agent-based modeling, machine learning, and natural language processing to study trust, information flows, and governance in socio-technical systems. Outside of research, she enjoys reading obscure feminist literature, trying new food spots around DC, and watching just about every thriller on Netflix." },
+      { name: "Sai Ashutosh Chellarapu", affiliation: "George Mason University", email: "schellar@gmu.edu", website: "https://www.linkedin.com/in/sai-ashutosh-chellarapu-530281286/", bio: "Sai Ashutosh Chellarapu is a Computational Data Science student at George Mason University. His background combines data-driven problem solving with hands-on research experience, including work on bacterial quorum sensing and biofilm inhibition. More recently, he has expanded into applied data science, using practical analytics and modern data tools to address socially relevant problems. In his free time, he enjoys gaming and creating nihilistic memes." },
+      { name: "Akshaya Pabisetty", affiliation: "George Mason University", email: "apabbise@gmu.edu", website: "https://www.linkedin.com/in/akshayapabbisetty/", bio: "Akshaya Pabbisetty is a freshman at George Mason University in the Computer Science department. She is interested in artificial intelligence and large language models, specifically in questions about information flow, behavior, and decision-making in digital environments. She hopes to one day build and improve socio-technical systems using her data science and CS expertise. In her free time, she enjoys singing and performs with her own band." },
+      { name: "Bruhathi Sivalenka", affiliation: "George Mason University", email: "bsivalen@gmu.edu", website: "https://www.linkedin.com/in/hamsini-sivalenka-216643259", bio: "Bruhathi Sivalenka is a freshman Computer Science student at George Mason University. She is interested in AI and has worked on projects involving large language models. She enjoys problem-solving and exploring how these systems can be applied in different contexts. In her free time, she works as a swim instructor for young children at the Dulles Recreation Center, enjoys going on walks, and loves baking and cooking." }
     ],
-    abstract: "We present a real-time dashboard system that allows policymakers to interact with running LLM agent simulations, adjusting parameters and observing outcomes dynamically. The system visualizes agent behaviors at individual, network, and population levels, supporting multiple analytical perspectives. In user studies with policy analysts, we find that interactive exploration significantly improves understanding of policy mechanisms compared to static reports. We discuss design principles for making complex simulation outputs accessible to non-technical decision-makers.",
-    pdfUrl: "assets/papers/sample9.pdf",
-    posterUrl: "assets/papers/poster9.pdf"
+    abstract: "Emergency alerts must communicate actionable guidance quickly under stress, yet small differences in message structure and wording can change what recipients understand and remember. Rigorous pre-deployment testing of alert variants is often slow and expensive, limiting iteration by agencies. We present a lightweight A/B simulation framework called SIREN or Simulated Inhabitant Response and Evaluation Network. The framework uses instruction-tuned LLMs as stratified “resident” respondents to stress-test emergency-alert rewrites. For each alert, we generate control and three variants (action-first, plain-language, constraint-aware) and evaluate them across resident profiles varying in English proficiency, mobility constraints, and trust in officials. Agents return structured JSON outputs, enabling automatic scoring of action recall, confusion, and intended compliance against human-specified required actions. Across 17 alerts, paired within-alert comparisons show that action-first formatting yields a small but consistent recall lift that remains stable when scaling from 40 to 80 agents, while subgroup analyses reveal heterogeneous effects. We also introduce an interpretable structure score that helps explain when formatting changes translate into recall gains. SIREN is intended for rapid screening and failure-mode discovery, complementing—not replacing—human evaluation.",
+    pdfUrl: "assets/papers/accepted_papers/SIREN_Silicon_AB_Testing_for_Emergency_Alerts.pdf",
+    videoUrl: null
   },
   {
     id: 20,
-    title: "Adversarial Robustness in Social Simulations: When Agents Game the System",
+    title: "SLALOM: Simulation Lifecycle Analysis via Longitudinal Observation Metrics for Social Simulation",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Juhoon Lee", affiliation: "School of Computing, KAIST", email: "juhoonlee@kaist.ac.kr", website: "https://juhoonlee.com/", bio: null },
+      { name: "Joseph Seering", affiliation: "School of Computing, KAIST", email: "seering@kaist.ac.kr", website: "https://joseph.seering.org/", bio: null }
     ],
-    abstract: "Policy simulations must account for strategic behavior—real actors actively try to exploit policy loopholes. We introduce adversarial testing for LLM agent simulations, where a subset of agents are prompted to maximize self-interest through policy exploitation. Our experiments across taxation, housing, and healthcare policy domains reveal that standard simulations significantly underestimate gaming behaviors. We propose simulation architectures that incorporate adversarial agents by default, providing more realistic estimates of policy robustness and identifying vulnerabilities before real-world deployment.",
-    pdfUrl: "assets/papers/sample10.pdf",
-    posterUrl: null
+    abstract: "Large Language Model (LLM) agents offer a potentially-transformative path forward for generative social science but face a critical crisis of validity. Current simulation evaluation methodologies suffer from the \"stopped clock\" problem: they confirm that a simulation reached the correct final outcome while ignoring whether the trajectory leading to it was sociologically plausible. Because the internal reasoning of LLMs is opaque, verifying the \"black box\" of social mechanisms remains a persistent challenge. In this paper, we introduce SLALOM (Simulation Lifecycle Analysis via Longitudinal Observation Metrics), a framework that shifts validation from outcome verification to process fidelity. Drawing on Pattern-Oriented Modeling (POM), SLALOM treats social phenomena as multivariate time series that must traverse specific SLALOM gates, or intermediate waypoint constraints representing distinct phases. By utilizing Dynamic Time Warping (DTW) to align simulated trajectories with empirical ground truth, SLALOM offers a quantitative metric to assess structural realism, helping to differentiate plausible social dynamics from stochastic noise and contributing to more robust policy simulation standards.",
+    pdfUrl: "assets/papers/accepted_papers/SLALOM_Simulation_Lifecycle_Analysis_via_Longitudinal_Observation_Metrics_for_So.pdf",
+    videoUrl: null
   },
   {
     id: 21,
-    title: "Participatory Simulation Design: Centering Community Voice in Policy Modeling",
+    title: "The Privacy Equilibrium Toolkit: Simulating Multi-User Negotiations of Augmented Reality Sensing Policies",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Shwetha Rajaram", affiliation: "University of Michigan", email: "shwethar@umich.edu", website: "https://shwetharajaram.github.io/", bio: "Shwetha Rajaram is a PhD candidate at the University of Michigan, in the School of Information. Her research develops meaningful interactions with wearable intelligent systems (e.g., augmented reality) while safeguarding privacy." },
+      { name: "Jiasi Chen", affiliation: "University of Michigan", email: "jiasi@umich.edu", website: "https://jiasi.engin.umich.edu/", bio: "Jiasi Chen is an Associate Professor at the University of Michigan, in the department of Electrical Engineering and Computer Science. Her research focus is on mobile computing and multimedia systems, including XR security and privacy." },
+      { name: "Michael Nebeling", affiliation: "University of Michigan", email: "nebeling@umich.edu", website: "https://www.michael-nebeling.de/", bio: "Michael Nebeling is an Associate Professor at the University of Michigan, in the School of Information. He studies the design of usable and safe everyday, always-on AR experiences, with a particular interest in novel interaction techniques and tools to empower end-users." }
     ],
-    abstract: "Most policy simulations are designed by technical researchers with limited input from affected communities. We present a participatory simulation design methodology that involves community members in defining agent behaviors, social dynamics, and outcome metrics. Applied to housing policy in three urban neighborhoods, our approach produces simulations that capture community-identified concerns often missed by expert-designed models. We argue that participatory approaches are not merely ethical additions but fundamentally improve simulation quality and policy relevance.",
-    pdfUrl: "assets/papers/sample1.pdf",
-    posterUrl: null
+    abstract: "This encore submission presents the Privacy Equilibrium toolkit, a research platform for simulating how multi-user negotiations of augmented reality (AR) sensing policies could be conducted in the future. Our overarching goal is to balance the user experience and privacy needs of multiple users and bystanders in shared spaces, an open challenge that is otherwise difficult to evaluate without widespread real-world usage of everyday AR. We discuss insights from evaluations with security & privacy experts, and reflect on opportunities for LLM-driven simulation to enable richer modeling of privacy risks.",
+    pdfUrl: "assets/papers/accepted_papers/The_Privacy_Equilibrium_Toolkit_Simulating_Multi-User_Negotiations_of_Augmented.pdf",
+    videoUrl: null
   },
   {
     id: 22,
-    title: "Scaling Laws for Social Simulation: How Many Agents Are Enough?",
+    title: "Verification-in-Use for LLM-Agent Simulations: Toward Robust Inference under Model Uncertainty",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Hirokazu Shirado", affiliation: "Carnegie Mellon University", email: "shirado@cmu.edu", website: "http://www.shirado.net/", bio: "Hirokazu Shirado is an Associate Professor of the Human-Computer Interaction Institute in the School of Computer Science at Carnegie Mellon University. His research focuses on hybrid systems of humans and machines, particularly how machine intelligence can help people address the challenges of collective action." },
+      { name: "Yuxuan Li", affiliation: "Carnegie Mellon University", email: "yuxuanll@andrew.cmu.edu", website: null, bio: null },
+      { name: "Sauvik Das", affiliation: "Carnegie Mellon University", email: "sauvik@cmu.edu", website: null, bio: null }
     ],
-    abstract: "A fundamental question in LLM agent simulation is how many agents are needed to produce reliable policy insights. We systematically vary population size from 10 to 100,000 agents across eight policy scenarios, measuring how aggregate outcomes stabilize. We discover domain-specific scaling laws: simple economic scenarios converge with fewer than 100 agents, while complex social dynamics require thousands. Our findings provide practical guidelines for researchers balancing computational cost with simulation fidelity, and reveal that current small-scale studies may miss critical emergent phenomena.",
-    pdfUrl: "assets/papers/sample2.pdf",
-    posterUrl: "assets/papers/poster2.pdf"
+    abstract: "Large language model (LLM) agents are increasingly used to simulate human behavior and social interaction in policy-relevant domains. Yet a central methodological question remains unresolved: how should such simulations be evaluated for policy use? A common answer is empirical validation—showing that a simulator reproduces observed human or real-world behavior, then using it to reason about unobserved settings. However, in many policy contexts, this target is both difficult to satisfy and stronger than what practical use requires. We argue for an alternative framework: verification-in-use. Rather than asking whether a simulator is globally valid, verification-in-use asks whether it supports a reliable comparison between policy alternatives under model uncertainty. We formalize this perspective as an iterative process in which a plausible model space is constrained through empirical observations, expert judgment, and stakeholder feedback, while robustness is assessed in terms of whether decision-relevant contrasts remain stable enough for downstream use. We further characterize practical failure modes of this process, including incomplete plausible spaces, stopping ambiguity, and persistent non-separability. By shifting the evaluation target from global realism to decision-oriented robustness, this paper offers a framework for using LLM-agent simulations more transparently and responsibly in policy settings.",
+    pdfUrl: "assets/papers/accepted_papers/Verification-in-Use_for_LLM-Agent_Simulations_Toward_Robust_Inference_under_Mode.pdf",
+    videoUrl: null
   },
   {
     id: 23,
-    title: "Memory Architectures for Long-Horizon Policy Simulation",
+    title: "We Need Strong Preconditions For Using Simulations In Policy",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Steven Luo", affiliation: "University of California, Berkeley", email: "sfluo@berkeley.edu", website: "https://stevenfluo.github.io", bio: "Steven Luo is a fourth-year undergraduate studying computer science and public policy at the University of California, Berkeley. His research interests broadly lie in behavior simulation, decision assistance tools, and technology policy. In the fall, he will begin his PhD in the School of Computer Science at Carnegie Mellon University." },
+      { name: "Saanvi Arora", affiliation: "University of California, Berkeley", email: "saanvia@berkeley.edu", website: null, bio: "Saanvi Arora is a fourth-year undergraduate studying computer science and legal studies at the University of California, Berkeley. Her interests lie in youth mental health, surveillance, access to justice, and the governance of emerging technologies. She has authored and helped advance over fifteen pieces of legislation at the state and federal levels and has conducted research on youth privacy and data protection through her work with nonprofits and legal organizations." },
+      { name: "Carlos Guirado", affiliation: "University of California, Berkeley", email: "guirado@berkeley.edu", website: "https://carlosguirado.com", bio: "Carlos Guirado is a PhD Candidate in Civil and Environmental Engineering at the University of California, Berkeley. He studies how to make reliable predictions about the effects of interventions in complex social systems, where we often cannot run the experiments we wish we had. His research aims to build a principled foundation for reasoning about interventions at scale." }
     ],
-    abstract: "Policy effects often unfold over months or years, requiring agents to maintain coherent long-term memories and evolving beliefs. We compare five memory architectures for LLM agents in long-horizon policy simulations: simple buffer, retrieval-augmented, hierarchical summarization, episodic-semantic dual-store, and our proposed temporal attention mechanism. Evaluating across simulated policy timelines of up to five years, we find that memory architecture significantly impacts behavioral realism and policy outcome predictions. Our temporal attention approach best captures how real humans selectively remember and reinterpret past policy experiences.",
-    pdfUrl: "assets/papers/sample3.pdf",
-    posterUrl: null
+    abstract: "Simulations, and more recently LLM agent simulations, have been adopted as useful tools for policymakers to explore interventions, rehearse potential scenarios, and forecast outcomes. While LLM simulations have enormous potential, two critical challenges remain understudied: the dual-use potential of accurate models of individual or population-level human behavior and the difficulty of validating simulation outputs. In light of these limitations, we must define boundaries for both simulation developers and decision-makers to ensure responsible development and ethical use. We propose and discuss three preconditions for societal-scale LLM agent simulations: 1) do not treat simulations of marginalized populations as neutral technical outputs, 2) do not simulate populations without their participation, and 3) do not simulate without accountability. We believe that these guardrails, combined with our call for simulation development and deployment reports, will help build trust among policymakers while promoting responsible development and use of societal-scale LLM agent simulations for the public benefit.",
+    pdfUrl: "assets/papers/accepted_papers/We_Need_Strong_Preconditions_For_Using_Simulations_In_Policy.pdf",
+    videoUrl: null
   },
   {
     id: 24,
-    title: "Digital Twins for Education Policy: Simulating School District Responses to Reform",
+    title: "What Makes LLM Agent Simulations Useful for Policy Practice? An Iterative Design Study in Emergency Preparedness",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null },
-      { name: "Author 3", affiliation: "Affiliation 3", email: "author3@example.com", website: null, bio: null }
+      { name: "Yuxuan Li", affiliation: "School of Computer Science, Carnegie Mellon University", email: "yuxuanll@andrew.cmu.edu", website: "https://yuxuanli.com/", bio: "Yuxuan Li is a second-year PhD student in the Human-Computer Interaction Institute at Carnegie Mellon University, advised by Hirokazu Shirado and Sauvik Das. His research focuses on building socially intelligent AI agents and using multi-agent simulations to understand and improve human social systems. He received a BS in Computer Science from Tsinghua University, where he worked with Chun Yu and Yuanchun Shi, and was a research intern at University of California, Berkeley with Coye Cheshire. His work has received extensive media coverage and led to invited talks at institutions including CMU, Georgia Tech, Tsinghua, HKU, and Microsoft." },
+      { name: "Sauvik Das", affiliation: "School of Computer Science, Carnegie Mellon University", email: "sauvik@cmu.edu", website: null, bio: null },
+      { name: "Hirokazu Shirado", affiliation: "School of Computer Science, Carnegie Mellon University", email: "shirado@cmu.edu", website: null, bio: null }
     ],
-    abstract: "Education policy reforms have long implementation timelines and high stakes, making simulation particularly valuable. We create digital twin simulations of three school districts using LLM agents representing students, teachers, administrators, and parents. Each agent is calibrated using district-specific demographic and performance data. We simulate the multi-year impacts of three reform interventions: class size reduction, curriculum standardization, and teacher incentive restructuring. Our simulations identify implementation challenges and unintended consequences that traditional policy analysis methods often overlook.",
-    pdfUrl: "assets/papers/sample4.pdf",
-    posterUrl: "assets/papers/poster4.pdf"
+    abstract: "Policymakers must often act under conditions of deep uncertainty, such as emergency response, where predicting the specific impacts of a policy a priori is implausible. Large Language Model (LLM) agent simulations have been proposed as tools to support policymakers under these conditions, yet little is known about how such simulations become useful for real-world policy practice. To address this gap, we conducted a year-long, stakeholder-engaged design process with a university emergency preparedness team. Through iterative design cycles, we developed and refined an LLM agent simulation of a large-scale campus gathering, ultimately scaling to 13,000 agents modeling crowd movement and communication under various emergency scenarios. Rather than producing predictive forecasts, these simulations supported policy practice by shaping volunteer training, evacuation procedures, and infrastructure planning. Analyzing these findings, we identify three design process implications for making LLM agent simulations useful for policy practice: start from verifiable scenarios to bootstrap trust, use preliminary simulations to elicit tacit domain knowledge, and treat simulation capabilities and policy implementation as co-evolving.",
+    pdfUrl: "assets/papers/accepted_papers/What_Makes_LLM_Agent_Simulations_Useful_for_Policy_Practice_An_Iterative_Design.pdf",
+    videoUrl: null
   },
   {
     id: 25,
-    title: "Beyond English: Multilingual Agent Simulations for Global Policy Research",
+    title: "Who Speaks for the Organization? Simulating Strategic Organizational Reasoning in Regulatory Comment Processes",
     authors: [
-      { name: "Author 1", affiliation: "Affiliation 1", email: "author1@example.com", website: null, bio: null },
-      { name: "Author 2", affiliation: "Affiliation 2", email: "author2@example.com", website: null, bio: null }
+      { name: "Anita Srinivasan", affiliation: "UC Berkeley School of Law", email: "anita@berkeley.edu", website: "https://www.anitasrinivasan.com", bio: "Anita Srinivasan is an LLM candidate at UC Berkeley School of Law, focused on the law, policy, and governance of emerging technologies. Her current research uses multi-agent LLM systems to simulate strategic organizational reasoning in regulatory processes. She holds a B.A., LL.B. (Hons.) from the National Law School of India University." }
     ],
-    abstract: "The majority of LLM agent simulations operate exclusively in English, limiting their applicability to global policy contexts. We investigate the feasibility and challenges of multilingual agent simulations, where agents communicate in their native languages and must navigate cross-linguistic policy deliberation. Our experiments across eight languages reveal significant behavioral differences between English-only and multilingual simulations, particularly in negotiations and consensus-building scenarios. We argue that multilingual simulation is not merely a translation problem but fundamentally changes the dynamics of simulated social interaction.",
-    pdfUrl: "assets/papers/sample5.pdf",
-    posterUrl: null
+    abstract: "Large language model (LLM) policy simulations typically model individuals expressing authentic preferences. Yet the actors who most shape regulatory outcomes are organizations producing strategic documents designed to build legal records, not express beliefs. We test whether modeling internal organizational deliberation—decomposing an organization into legal, business, and government affairs departments before synthesizing a public comment—produces more realistic simulated regulatory comments than either individual agents or monolithic organizational agents. Using the SEC's proposed amendments to Rule 3b-16 (expanding the definition of \"exchange\" to cover DeFi protocols) as a case study, we simulate comments from eight real organizations across three conditions and validate against the actual filed comment record. We find that monolithic organizational agents achieve near-perfect position prediction (100% accuracy) and high argument alignment, while deliberative agents produce marginally broader arguments but introduce a position error in one case—a community banking association whose internal departments recommended cautious support but whose synthesis agent flipped to opposition. We also apply the same architectures to an anticipated SEC rulemaking with no existing comment record, demonstrating the tool's forward-looking predictive use case.",
+    pdfUrl: "assets/papers/accepted_papers/Who_Speaks_for_the_Organization_Simulating_Strategic_Organizational_Reasoning_in.pdf",
+    videoUrl: null
   }
 ];

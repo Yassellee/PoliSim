@@ -991,7 +991,7 @@ class Gallery {
         } catch (e) { return; }
 
         for (const stand of this.stands) {
-            const url = stand.paper.posterUrl || stand.paper.pdfUrl;
+            const url = stand.paper.pdfUrl;
             if (!url) continue;
             try {
                 const pdf = await pdfjsLib.getDocument(url).promise;
@@ -1548,24 +1548,39 @@ class Gallery {
         m.querySelector('.modal-title').textContent = paper.title;
         m.querySelector('.modal-abstract').textContent = paper.abstract;
 
-        m.querySelector('.modal-authors').innerHTML = paper.authors.map(a => `
-            <div class="author-card">
-                <div class="author-name">${a.website ? `<a href="${a.website}" target="_blank">${a.name}</a>` : a.name}</div>
+        m.querySelector('.modal-authors').innerHTML = paper.authors.map(a => {
+            const url = a.website && !/^https?:\/\//i.test(a.website) ? 'https://' + a.website : a.website;
+            return `<div class="author-card">
+                <div class="author-name">${url ? `<a href="${url}" target="_blank">${a.name}</a>` : a.name}</div>
                 <div class="author-affiliation">${a.affiliation}</div>
-                <div class="author-email"><a href="mailto:${a.email}">${a.email}</a></div>
-                ${a.bio ? `<div class="author-bio">${a.bio}</div>` : ''}
-            </div>
-        `).join('');
+            </div>`;
+        }).join('');
 
         let actionsHtml = `<a href="${paper.pdfUrl}" target="_blank" class="btn-pdf">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
             View Paper PDF</a>`;
-        if (paper.posterUrl) {
-            actionsHtml += `<a href="${paper.posterUrl}" target="_blank" class="btn-poster">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                View Poster</a>`;
+        if (paper.videoUrl) {
+            actionsHtml += `<a href="${paper.videoUrl}" target="_blank" class="btn-video">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Watch Video</a>`;
         }
         m.querySelector('.modal-actions').innerHTML = actionsHtml;
+
+        // Build separate bios section
+        const biosContainer = m.querySelector('.modal-bios');
+        const authorsWithBios = paper.authors.filter(a => a.bio);
+        if (authorsWithBios.length > 0) {
+            biosContainer.innerHTML = `
+                <div class="modal-bios-label">About the Authors</div>
+                ${authorsWithBios.map(a => `<div class="modal-bio-entry">
+                    <div class="modal-bio-name">${a.name}</div>
+                    <div class="modal-bio-text">${a.bio}</div>
+                </div>`).join('')}`;
+            biosContainer.style.display = '';
+        } else {
+            biosContainer.innerHTML = '';
+            biosContainer.style.display = 'none';
+        }
 
         m.classList.remove('hidden');
         this.hidePreview();
