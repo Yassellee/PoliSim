@@ -991,7 +991,7 @@ class Gallery {
         } catch (e) { return; }
 
         for (const stand of this.stands) {
-            const url = stand.paper.pdfUrl;
+            const url = stand.paper.posterUrl || stand.paper.pdfUrl;
             if (!url) continue;
             try {
                 const pdf = await pdfjsLib.getDocument(url).promise;
@@ -1559,6 +1559,11 @@ class Gallery {
         let actionsHtml = `<a href="${paper.pdfUrl}" target="_blank" class="btn-pdf">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
             View Paper PDF</a>`;
+        if (paper.posterUrl) {
+            actionsHtml += `<a href="${paper.posterUrl}" target="_blank" class="btn-pdf">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                View Poster PDF</a>`;
+        }
         if (paper.videoUrl) {
             actionsHtml += `<a href="${paper.videoUrl}" target="_blank" class="btn-video">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>

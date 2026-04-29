@@ -322,6 +322,7 @@ class AcceptedPapers {
         this.listEl.innerHTML = this.papers.map((paper, i) => {
             const authors = paper.authors.map(a => a.name).join(', ');
             const pdfPath = `assets/papers/accepted_papers/${paper.pdf_file}`;
+            const posterPath = paper.poster_url || null;
             const videoPath = paper.video_file ? `assets/videos/${paper.video_file}` : null;
             const isNominated = bestPaperNominees.includes(paper.title);
 
@@ -334,7 +335,11 @@ class AcceptedPapers {
                     <a href="${pdfPath}" target="_blank" rel="noopener noreferrer" class="paper-pdf-link" onclick="event.stopPropagation()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
                         PDF
-                    </a>${videoPath ? `
+                    </a>${posterPath ? `
+                    <a href="${posterPath}" target="_blank" rel="noopener noreferrer" class="paper-video-link" onclick="event.stopPropagation()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        Poster
+                    </a>` : ''}${videoPath ? `
                     <a href="${videoPath}" target="_blank" rel="noopener noreferrer" class="paper-video-link" onclick="event.stopPropagation()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                         Video
@@ -372,6 +377,7 @@ class AcceptedPapers {
 
     openModal(paper) {
         const pdfPath = `assets/papers/accepted_papers/${paper.pdf_file}`;
+        const posterPath = paper.poster_url || null;
         const videoPath = paper.video_file ? `assets/videos/${paper.video_file}` : null;
 
         // Build authors chips
@@ -394,6 +400,12 @@ class AcceptedPapers {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
             Read Paper
         </a>`;
+        if (posterPath) {
+            linksHtml += `<a href="${posterPath}" target="_blank" rel="noopener noreferrer" class="modal-link-button pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                View Poster
+            </a>`;
+        }
         if (videoPath) {
             linksHtml += `<a href="${videoPath}" target="_blank" rel="noopener noreferrer" class="modal-link-button video">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
